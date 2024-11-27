@@ -42,7 +42,6 @@ word_equation = st.text_input("Masukkan persamaan cryptarithm:")
 if word_equation:
     # Preprocessing input
     word_equation = word_equation.replace(" ", "")
-    st.write("Sedang mencari solusi...")
     with st.spinner("Mencari solusi, mohon tunggu..."):
         time.sleep(1)  # Simulate loading animation
         solution = solve_cryptarithm(word_equation)
