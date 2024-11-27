@@ -60,13 +60,9 @@ if word_equation:
         right_number = apply_mapping_to_words([right_side], solution)[0]
 
         # Display results
-        st.success("Solusi ditemukan!")
-        st.write("Mapping huruf ke angka:")
-        st.write(sorted_mapping)
-
-        # Show numeric representation of the equation
-        st.write("Persamaan numerik:")
         equation_numeric = " + ".join(map(str, left_numbers)) + f" = {right_number}"
         st.success(equation_numeric)
+        st.write("Mapping huruf ke angka:")
+        st.write(sorted_mapping)
     else:
         st.error("Tidak ada solusi yang valid.")
