@@ -67,6 +67,6 @@ if word_equation:
         # Show numeric representation of the equation
         st.write("Persamaan numerik:")
         equation_numeric = " + ".join(map(str, left_numbers)) + f" = {right_number}"
-        st.write(equation_numeric)
+        st.success(equation_numeric)
     else:
         st.error("Tidak ada solusi yang valid.")
